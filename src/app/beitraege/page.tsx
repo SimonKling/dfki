@@ -1,10 +1,7 @@
 import Beitraege from "@/components/ui/Beitraege";
 import Footer from "@/components/ui/footer";
 import erfolg from "../../../public/erfolgdurchhybrideteams.png";
-import kitools from "../../../public/kitools.png";
 import NavBar from "@/components/ui/navbar";
-import leadershipimkontext from "../../../public/leadershipimkontext.png";
-import kurskiundleadership from "../../../public/Kurs-KI-Leadership.png";
 
 export const data = [
   {
