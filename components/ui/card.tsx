@@ -84,9 +84,13 @@ const Card: FC<CardProps> = ({ targetRef }) => {
           <AnimatePresence>
             <Tabs
               defaultValue="account"
-              className=" w-fit min-h-96 mx-auto  text-center rounded-[1vmin] font-poppins bg-gradient-to-r from-[#319afF] to-[#002c75] "
+              className=" w-fit min-h-96 mx-auto  text-center rounded-t-[1vmin]  font-poppins rounded-b-[10vmin] bg-gradient-to-r from-[#319afF] to-[#002c75] "
             >
-              <div className="pt-2 ">
+              <div className=" text-white text-xl font-bold flex justify-center pt-3">
+                {" "}
+                Einführungsvideo & Referenzen
+              </div>
+              {/* <div className="pt-2 ">
                 <TabsList className="z-[9999]">
                   <TabsTrigger className="z-[9999]" value="account">
                     Einführung & Referenz
@@ -95,17 +99,20 @@ const Card: FC<CardProps> = ({ targetRef }) => {
                     Zum Kurs
                   </TabsTrigger>
                 </TabsList>
-              </div>
+              </div> */}
 
-              <div className="bg-white w-fit rounded-b-[1vmin]  text-black mt-4 ">
-                <TabsContent value="account" className="flex gap-x-2 ">
+              <div className="bg-white w-fit rounded-b-[10vmin]  text-black mt-4 ">
+                <TabsContent
+                  value="account"
+                  className="flex gap-x-2 flex-col gap-y-4 "
+                >
                   <div className="flex flex-col w-full">
                     <div className="flex flex-row  lg:w-[1050px]  w-full flex-wrap ">
                       <div className="w-full lg:w-1/2 flex flex-col ">
                         <ReactPlayer
                           width={"100%"}
-                          height={300}
-                          className="border-4 border-white"
+                          height={299}
+                          className="border-4 border-blue-800"
                           controls={true}
                           url={
                             "https://www.youtube.com/embed/RqNAcQlGUik?si=IOH_4_iQ9acMKpfe"
@@ -113,8 +120,8 @@ const Card: FC<CardProps> = ({ targetRef }) => {
                         ></ReactPlayer>
                         <motion.span
                           initial="hidden"
-                          animate="visible"
-                          transition={{ staggerChildren: 0.01 }}
+                          whileInView="visible"
+                          transition={{ staggerChildren: 0.05 }}
                           className="text-xl text-blue-400 py-4   font-bold block"
                         >
                           {"Einführungsvideo".split("").map((x, index) => (
@@ -127,8 +134,8 @@ const Card: FC<CardProps> = ({ targetRef }) => {
                       <div className="w-full lg:w-1/2 flex flex-col">
                         <ReactPlayer
                           width={"100%"}
-                          height={"300px"}
-                          className="border-4 border-white"
+                          height={299}
+                          className="border-4 border-blue-800"
                           controls={true}
                           url={
                             "https://player.vimeo.com/video/912126253?h=63c1605977&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -136,8 +143,8 @@ const Card: FC<CardProps> = ({ targetRef }) => {
                         ></ReactPlayer>
                         <motion.span
                           initial="hidden"
-                          animate="visible"
-                          transition={{ staggerChildren: 0.01 }}
+                          whileInView="visible"
+                          transition={{ staggerChildren: 0.05 }}
                           className="text-xl text-blue-400 py-4   font-bold block"
                         >
                           {"Referenzvideo".split("").map((x, index) => (
@@ -149,8 +156,6 @@ const Card: FC<CardProps> = ({ targetRef }) => {
                       </div>
                     </div>
                   </div>
-                </TabsContent>
-                <TabsContent value="password">
                   <Image
                     className="mx-auto h-72 mb-4 w-[32em]"
                     width={500}
@@ -192,6 +197,7 @@ const Card: FC<CardProps> = ({ targetRef }) => {
                     </motion.button>
                   </motion.div>
                 </TabsContent>
+                <TabsContent value="password"></TabsContent>
               </div>
             </Tabs>
           </AnimatePresence>

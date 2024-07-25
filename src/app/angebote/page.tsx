@@ -11,10 +11,10 @@ export default function Index() {
     {
       title: "Mikrokurs",
       description:
-        "Dieser Kurs umfasst die Module 1,2 und 6 des Gesamtkurses: KI & Leadership zusammengestellt, damit Sie innerhalb kurzer Zeit zentrale Inhalte und Praxisanwendungen zur Thematik kennenlernen.",
+        "Dieser Kurs umfasst die Module 1,2 und 6 des Gesamtkurses: KI & Leadership. Dadurch lernen Sie innerhalb kurzer Zeit zentrale Inhalte und Praxisanwendungen zur Thematik.",
       features: [
         {
-          title: "Inviduelles Vorzüge mit unserem Mikrokurs",
+          title: "Inviduelle Vorzüge mit unserem Mikrokurs",
           tag: blue,
         },
         {
