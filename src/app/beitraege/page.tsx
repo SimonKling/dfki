@@ -5,7 +5,6 @@ import kitools from "../../../public/kitools.png";
 import NavBar from "@/components/ui/navbar";
 import leadershipimkontext from "../../../public/leadershipimkontext.png";
 import kurskiundleadership from "../../../public/Kurs-KI-Leadership.png";
-import { StaticImageData } from "next/image";
 
 export const data = [
   {
