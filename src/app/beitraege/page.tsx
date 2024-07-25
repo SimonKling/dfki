@@ -25,7 +25,6 @@ export const data = [
     description:
       "Erfahren Sie, welche Vorteile der Einsatz von KI-Technologien für Führungskräfte bringt und worauf bei der Implementierung von KI-Tools zu achten ist.   ",
     url: "https://ki-leadership.org/Beitrag%20-%20Kurs_KI%20&%20Leadership%20-%20FORUM-Magazin.pdf",
-    imgUrl: kurskiundleadership,
     interview: false,
   },
   {
@@ -34,7 +33,6 @@ export const data = [
     description:
       "Erfahren Sie, welche Führungskompetenzen einen Digital Leader auszeichnen und warum der situative Führungsstil als agiler Führungsansatz besonders zur Bewältigung der aktuellen und zukünftigen Führungsaufgaben zu empfehlen ist.  ",
     url: "https://ki-leadership.org/Beitrag%20-%20Leadership%20und%20KI%20-%20Sonderband_Zukunft%20der%20Arbeit.pdf",
-    imgUrl: leadershipimkontext,
     interview: true,
   },
   {
@@ -42,7 +40,6 @@ export const data = [
     description:
       "Erhalten Sie eine Übersicht zu KI-Anwendungen in Unternehmen und welche KI-Tools Führungskräfte ihrer Arbeit unterstützen können. ",
     url: "https://ki-leadership.org/KI-Tools%20f%C3%BCr%20F%C3%BChrungskr%C3%A4fte.pdf",
-    imgUrl: kitools,
     interview: false,
   },
   {
